@@ -1,14 +1,20 @@
 go to this directory
 
+For Debian-like platforms first install the prerequisites:
 apt-get install cmake g++ zlib1g-dev libboost-all-dev flex bison
+
+Then install minisat:
+git clone https://github.com/stp/minisat.git
 cd minisat && mkdir build && cd build
 cmake ..
 make
 cd ../..
+
+Then compile the portfolio solver:
 cd stp && mkdir build && cd build
 cmake ..
 make
 
-
-how to run the test cases:
+how to run the test cases: 
+go to the "testcases" folder and copy the testcases to the "build" folder, and run the program
 ./stp_simple testcases.smt2
