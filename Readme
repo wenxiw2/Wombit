@@ -1,0 +1,14 @@
+go to this directory
+
+apt-get install cmake g++ zlib1g-dev libboost-all-dev flex bison
+cd minisat && mkdir build && cd build
+cmake ..
+make
+cd ../..
+cd stp && mkdir build && cd build
+cmake ..
+make
+
+
+how to run the test cases:
+./stp_simple testcases.smt2
