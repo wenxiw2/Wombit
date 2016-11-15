@@ -65,7 +65,7 @@ void ToSATBase::PrintOutput(SOLVER_RETURN_TYPE ret)
     {
       if (bm->UserFlags.smtlib1_parser_flag ||
           bm->UserFlags.smtlib2_parser_flag)
-        cout << "unsat,0\n";
+        cout << "unsat\n";
       else
         cout << "Valid.\n";
     }
@@ -77,7 +77,7 @@ void ToSATBase::PrintOutput(SOLVER_RETURN_TYPE ret)
     {
       if (bm->UserFlags.smtlib1_parser_flag ||
           bm->UserFlags.smtlib2_parser_flag)
-        cout << "sat,0\n";
+        cout << "sat\n";
       else
         cout << "Invalid.\n";
     }
